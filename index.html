@@ -1,9 +1,10 @@
-<html>
-  <head>
-    <meta charvctk_set="UTF-8">
-    <title>Sound demos for "DiffWave: A Versatile Diffusion Model for (Un-)Conditional Audio Synthesis"</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Sound demos for "DiffWave: A Versatile Diffusion Model fo Audio Synthersis"</title>
   </head>
-    <h2>Sound demos for "DiffWave: A Versatile Diffusion Model for (Un-)Conditional Audio Synthesis"</h2>
+    <h2>Sound demos for "DiffWave: A Versatile Diffusion Model for Audio Synthesis"</h2>
 
   <body>
 
@@ -108,8 +109,8 @@
       <tbody>
         <thead>
           <tr>
-            <th align="left">DiffWave</th>
-            <th align="left">Ground-truth (recorded speech)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th align="left">&nbsp;&nbsp;DiffWave</th>
+            <th align="left">&nbsp;&nbsp;Ground-truth (recorded speech)&nbsp;&nbsp;&nbsp;&nbsp;</th>
           </tr>
         </thead>
         <tr>
@@ -117,7 +118,7 @@
           <td><audio controls=""><source src="samples/sc09-uncond/ground_truth.wav" type="audio/wav"></audio></td>
         </tr>
         
-        <th align="left">WaveNet-256:</th>
+        <th align="left">&nbsp;&nbsp;WaveNet-256</th>
         <tr>
           <td><audio controls=""><source src="samples/sc09-cond/cond-wavenet-256.wav" type="audio/wav"></audio></td>
         </tr>
@@ -133,8 +134,8 @@
       <tbody>
         <thead>
           <tr>
-            <th align="left">DiffWave</th>
-            <th align="left">Ground-truth (recorded speech)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th align="left">&nbsp;&nbsp;DiffWave</th>
+            <th align="left">&nbsp;&nbsp;Ground-truth (recorded speech)&nbsp;&nbsp;&nbsp;&nbsp;</th>
           </tr>
         </thead>
         <tr>
@@ -142,18 +143,72 @@
           <td><audio controls=""><source src="samples/sc09-uncond/ground_truth.wav" type="audio/wav"></audio></td>
         </tr>
         
-        <th align="left">WaveGAN:</th>
+        <th align="left">&nbsp;&nbsp;WaveGAN:</th>
         <tr>
           <td><audio controls=""><source src="samples/sc09-uncond/uncond-wavegan.wav" type="audio/wav"></audio></td>
         </tr>
 
-        <th align="left">WaveNet-256:</th>
+        <th align="left">&nbsp;&nbsp;WaveNet-256:</th>
         <tr>
           <td><audio controls=""><source src="samples/sc09-uncond/uncond-wavenet-256.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
 
+
+    <br> </br>
+    <h3> Denoising steps in the reverse process of DiffWave</h3>
+    The audio samples are from the intermediate outputs of a DiffWave (T = 200) in the reverse process.
+    Note that, the most effective denoising step occurs near t = 0.
+    <br> </br>
+    Warning: turn down the volume. 
+    <br> </br>
+    <table>
+      <tbody>
+        
+        <thead>
+          <tr>
+            <th align="left">&nbsp;&nbsp;t = 200</th>
+            <th align="left">&nbsp;&nbsp;t = 150</th>
+            <th align="left">&nbsp;&nbsp;t = 100</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_200.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_150.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_100.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <thead>
+        <tr>
+            <th align="left">&nbsp;&nbsp;t = 50</th>
+            <th align="left">&nbsp;&nbsp;t = 20</th>
+            <th align="left">&nbsp;&nbsp;t = 10</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_50.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_20.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_10.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <thead>
+        <tr>
+            <th align="left">&nbsp;&nbsp;&nbsp;t = 5</th>
+            <th align="left">&nbsp;&nbsp;&nbsp;t = 1</th>
+            <th align="left">&nbsp;&nbsp;&nbsp;t = 0</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/reverse_process/reverse_0.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
 
 
 
